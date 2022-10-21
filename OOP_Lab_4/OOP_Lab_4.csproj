@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{BC0A38F4-449C-4BF9-B208-E79A87A6F70C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OOP_Lab_4</RootNamespace>
+    <AssemblyName>OOP_Lab_4</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Task 1\SomeClass.cs" />
+    <Compile Include="Task 1\AnotherClass.cs" />
+    <Compile Include="Task 2, 3\ClassA.cs" />
+    <Compile Include="Task 2, 3\ClassB.cs" />
+    <Compile Include="Task 2, 3\Horror.cs" />
+    <Compile Include="Task 2, 3\Shooter.cs" />
+    <Compile Include="Task 2, 3\Strategy.cs" />
+    <Compile Include="Task 4\ApplicationLicense.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Task 1\" />
+    <Folder Include="Task 2, 3\" />
+    <Folder Include="Task 4\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
